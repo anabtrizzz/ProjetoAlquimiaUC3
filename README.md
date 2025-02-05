@@ -8,7 +8,7 @@
 
 Integrantes
 
-- Ana Beatriz Oliveira
-- Clayton William Oliveira
+- Ana Beatriz Oliveira Silva
+- Clayton William Oliveira Rocha
 - Daniel Araujo Fiengo
-- Julia Galvão Almeida 
+- Julia Galvão Almeida Santos
