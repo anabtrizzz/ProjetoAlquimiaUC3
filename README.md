@@ -7,7 +7,7 @@
 
 ---
 
-Integrantes
+**Integrantes**
 
 - Ana Beatriz Oliveira Silva
 - Clayton William Oliveira Rocha
