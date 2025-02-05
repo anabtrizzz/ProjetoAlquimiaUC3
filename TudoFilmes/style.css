@@ -1,0 +1,38 @@
+
+/*#region global*/
+@font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins-ExtraLight.ttf');
+}
+
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins';
+}
+
+/*paleta de cores*/
+:root {
+    --clr-wine: #49111C;
+    --clr-black: #0A0908;
+    --clr-white: #F2F4F3;
+    --clr-lightbrown: #A9927D;
+    --clr-brown: #5E503F;
+    --no-color: transparent;
+}
+/*#endregion*/
+
+/*#region footer*/
+footer{
+   background-color: #0A0908;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: white;
+   width: 100%;
+   height: 200px;
+}
+/*#endregion*/
