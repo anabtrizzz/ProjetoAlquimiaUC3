@@ -49,7 +49,7 @@ footer {
 
     img {
         width: 30px;
-
+        filter: sepia(#F2f3f4);
     }
 
     .imgFooter {
