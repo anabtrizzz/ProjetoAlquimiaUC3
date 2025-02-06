@@ -1,4 +1,3 @@
-
 /*#region global*/
 @font-face {
     font-family: 'Poppins';
@@ -6,7 +5,7 @@
 }
 
 /*reset*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -23,6 +22,7 @@
     --clr-brown: #5E503F;
     --no-color: transparent;
 }
+
 /*#endregion*/
 
 
@@ -33,13 +33,31 @@
 
 
 /*#region footer*/
-footer{
-   background-color: #0A0908;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   color: white;
-   width: 100%;
-   height: 200px;
+footer {
+    background-color: #0A0908;
+    color: white;
+    width: 100%;
+    height: 230px;
+    padding-top: 30px;
+
+    .menuFooter {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    img {
+        width: 30px;
+
+    }
+
+    .imgFooter {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
 }
+
 /*#endregion*/
