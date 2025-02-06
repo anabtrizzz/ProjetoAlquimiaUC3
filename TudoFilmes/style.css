@@ -25,6 +25,95 @@
 
 /*#endregion*/
 
+/*#region login*/
+
+
+.sectiontopo{
+    background-image: url('./img/background.png');
+}
+
+
+.login{
+    align-items: center;
+    justify-items: center;
+    color: var(--clr-white);
+    height: 500px;
+}
+
+.btnLogin{
+    color: var(--clr-white);
+    background-color: var(--clr-wine);
+    font-weight:bold;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+}
+
+.esquerda{
+    justify-content: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnAssinar{
+    color: var(--clr-white);
+    background-color: var(--clr-wine);
+    font-weight:bold;
+    padding: 12px 20px 12px 20px;
+    border-radius: 10px;
+}
+
+.sectionPlans{
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+.um{
+    background-color: aqua;
+    width: 600px;
+    justify-content: center;
+    display: flex;
+}
+
+.dois{
+    background-color: #5E503F;
+    width: 600px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.btnUm{
+    background-color: var(--clr-lightbrown);
+    height: 150px;
+    border-radius: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.segundaria{
+    height: 500px;
+    background-color: var(--clr-wine);
+    color: white;
+}
+
+.btnDois{
+    background-color: var(--clr-lightbrown);
+    height: 250px;
+    border-radius: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/*#endregion*/
+
+
 
 /*#region topo*/
 
