@@ -4,91 +4,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Cine Box </title>
+  <title>Cine Box</title>
   <link rel="stylesheet" href="./style.css">
   <!-- my CSS -->
 
-
   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
   <!-- fav Icon -->
-
 </head>
-
 
 <body>
 
-
-  <div class="teste">
+  <header class="menuContainer">
     <nav class="menu">
-      <img src="./img/logo.png" alt="logoPrincipal" class="logo">
+      <img src="./img/logo.png" alt="Logo principal do Cine Box" class="logo">
 
       <ul>
-        <li><a href="#"> Ínicio </a></li>
-        <li><a href="#"> Filmes </a></li>
-        <li><a href="#"> Series </a></li>
-        <li><a href="#"> Mais Assistidos </a></li>
-        <li><a href="#"> Minha Lista </a></li>
+        <li><a href="#">Ínicio</a></li>
+        <li><a href="#">Filmes</a></li>
+        <li><a href="#">Séries</a></li>
+        <li><a href="#">Mais Assistidos</a></li>
+        <li><a href="#">Minha Lista</a></li>
       </ul>
 
-      <img src="./img/lupa.png" alt="pesquisar" class="icons">
-      <img src="./img/sino.png" alt="notificações" class="icons">
+      <div class="icons">
+        <img src="./img/lupa.png" alt="Ícone de pesquisa" class="icons">
+        <img src="./img/sino.png" alt="Ícone de notificações" class="icons">
+      </div>
 
       <div class="dropdown">
-        <img src="./img/perfil.png" alt="perfil" class=" icons"> <!-- dropbtn -->
-
-        <div>
-          <div class="dropdown-content">
-            <a href="#">Yonne</a>
-            <a href="#">Hyuta</a>
-            <a href="#">Coraline</a>
-            <a href="#">Neeko</a>
-          </div>
+        <img src="./img/perfil.png" alt="Ícone de perfil" class="icons">
+        <div class="dropdown-content">
+          <a href="#">Yonne</a>
+          <a href="#">Hyuta</a>
+          <a href="#">Coraline</a>
+          <a href="#">Neeko</a>
         </div>
       </div>
 
     </nav>
-  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="project-img">
-          <!-- <img src="./img/bgCoraline.png" alt="Foto 01"> -->
-        </div>
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="./img/bgCoraline.png" alt="Imagem do filme Coraline 1">
+        <img src="./img/bgCoraline.png" alt="Imagem do filme Coraline 2">
+        <img src="./img/bgCoraline.png" alt="Imagem do filme Coraline 3">
       </div>
-      <div class="swiper-slide">
-        <div class="project-img">
-          <img src="./img/filmeDois.jpg" alt="Foto 02">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="project-img">
-          <img src="./img/filmeTrês.jpg" alt="Foto 03">
-        </div>
-      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
     </div>
 
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+  </header>
 
+
+
+
+
+  <!-- Carrossel Principal (Netflix Style) -->
+  <div id="carrosselNetflix" class="carrossel-filmes ">
+    <div class="carrossel-imagens">
+      <img src="./img/filmeUm.png" alt="Imagem 1">
+      <img src="./img/filme2.png" alt="Imagem 2">
+      <img src="./img/filme3.png" alt="Imagem 3">
+      <img src="img/filme4.png" alt="Imagem 4">
+      <img src="img/filme5.png" alt="Imagem 5">
+      <img src="img/filmeSeis.png" alt="Imagem 6">
+    </div>
+    <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
+  </div>
+
+  <!-- Carrossel Principal (Netflix Style) -->
+  <div id="carrosselNetflix" class="carrossel-filmes ">
+    <h2>Dramas</h2>
+    <div class="carrossel-imagens">
+      <img src="./img/filmeUm.png" alt="Imagem 1">
+      <img src="./img/filme2.png" alt="Imagem 2">
+      <img src="./img/filme3.png" alt="Imagem 3">
+      <img src="img/filme4.png" alt="Imagem 4">
+      <img src="img/filme5.png" alt="Imagem 5">
+      <img src="img/filmeSeis.png" alt="Imagem 6">
+    </div>
+    <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
+  </div>
+
+  <!-- Carrossel Principal (Netflix Style) -->
+  <div id="carrosselNetflix" class="carrossel-filmes ">
+    <h2>Anime</h2>
+    <div class="carrossel-imagens">
+      <img src="./img/filmeUm.png" alt="Imagem 1">
+      <img src="./img/filme2.png" alt="Imagem 2">
+      <img src="./img/filme3.png" alt="Imagem 3">
+      <img src="img/filme4.png" alt="Imagem 4">
+      <img src="img/filme5.png" alt="Imagem 5">
+      <img src="img/filmeSeis.png" alt="Imagem 6">
+    </div>
+    <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
+  </div>
+
+  <!-- Carrossel Principal (Netflix Style) -->
+  <div id="carrosselNetflix" class="carrossel-filmes ">
+    <h2>Maratonado</h2>
+    <div class="carrossel-imagens">
+      <img src="./img/filmeUm.png" alt="Imagem 1">
+      <img src="./img/filme2.png" alt="Imagem 2">
+      <img src="./img/filme3.png" alt="Imagem 3">
+      <img src="img/filme4.png" alt="Imagem 4">
+      <img src="img/filme5.png" alt="Imagem 5">
+      <img src="img/filmeSeis.png" alt="Imagem 6">
+    </div>
+    <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
+  </div>
+
+  <footer>
+    <div class="menuFooter">
+      <ul>
+        <li>Termos de Uso</li>
+        <li>Privacidade</li>
+        <li>Cookies</li>
+      </ul>
+
+      <ul>
+        <li>Informações</li>
+        <li>Entre em contato</li>
+        <li>Central de Ajuda</li>
+      </ul>
+
+      <ul>
+        <li>Sobre</li>
+        <li>Parceiros</li>
+        <li>Contrato de Assinatura</li>
+      </ul>
+    </div>
+
+    <div class="imgFooter">
+      <img src="./img/logoytb.png" alt="">
+      <img src="./img/logoinsta.png" alt="">
+      <img src="./img/logox.png" alt="">
+      <img src="./img/logoface.png" alt="">
+    </div>
+
+  </footer>
+
+  <script src="./script.js"></script>
 
 </body>
-
-<script src="./script.js"></script>
 
 </html>
