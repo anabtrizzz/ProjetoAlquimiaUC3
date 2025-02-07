@@ -1,0 +1,252 @@
+/*#region global*/
+@font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins-ExtraLight.ttf');
+}
+
+/*reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins';
+}
+
+/*paleta de cores*/
+:root {
+    --clr-wine: #49111C;
+    --clr-black: #0A0908;
+    --clr-white: #F2F4F3;
+    --clr-lightbrown: #A9927D;
+    --clr-brown: #5E503F;
+    --no-color: transparent;
+}
+
+/*#endregion*/
+
+/*#region login*/
+
+
+
+.sectiontopo{
+    background-image: url('./img/background.png');
+}
+
+
+.login{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 40px;
+    color: var(--clr-white);
+    height: 500px;
+    margin-top: 150px;
+}
+
+.btnLogin{
+    color: var(--clr-white);
+    background-color: var(--clr-wine);
+    font-weight:bold;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+}
+
+.esquerda{
+    justify-content: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: 10px;
+    &:hover{
+        transition: .3s;
+        opacity: .5;
+    }
+}
+
+.btnAssinar{
+    color: var(--clr-white);
+    background-color: var(--clr-wine);
+    font-weight:bold;
+    padding: 12px 20px 12px 20px;
+    border-radius: 10px;
+    &:hover{
+        transition: .3s;
+        opacity: .5;
+    }
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .h1{
+        text-align: center;
+    }
+}
+
+.sectionPlans{
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+.um{
+    background-color: aqua;
+    width: 600px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.dois{
+    background-color: #5E503F;
+    width: 600px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.btnUm{
+    background-color: var(--clr-lightbrown);
+    height: 150px;
+    border-radius: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.segundaria{
+    height: 550px;
+    background-color: var(--clr-wine);
+    color: white;
+    text-align: center;
+}
+
+.btnDois{
+    background-color: var(--clr-lightbrown);
+    height: 250px;
+    border-radius: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.opcoes{
+    width: 500px;
+    height:8em;
+    background-image: linear-gradient(to right, red 50% , blue 50%);
+    display: inline;
+}
+
+.catalogo {
+	width: 215px;
+    height: 200px;
+	display: inline-block;
+    & img{
+        width: 200px;
+        height: 270px;
+        border-radius: 10px;
+    }
+    &:hover{
+        transform: scale(1.2); 
+        transition: .5s;
+        opacity: .5;
+    }
+
+}
+
+
+.duvidasContainer {
+    width: 100%; 
+    margin: 10px 10; 
+    padding: 50px;
+    background-color: #49111C;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.duvidasInfos {
+    background-color: rgb(242,244,243, 0.5);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    cursor: pointer;
+    &:hover{
+        transition: .3s;
+        opacity: .5;
+    }
+}
+
+.pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.seta {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+/*#endregion*/
+
+
+
+/*#region topo*/
+
+/*#endregion*/
+
+
+
+/*#region footer*/
+footer {
+    background-color: #0A0908;
+    color: white;
+    width: 100%;
+    height: 230px;
+    padding-top: 30px;
+
+    .menuFooter {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    img {
+        width: 30px;
+        filter: sepia(#F2f3f4);
+    }
+
+    .imgFooter {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+/*#endregion*/ 
