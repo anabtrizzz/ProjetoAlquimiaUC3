@@ -2,43 +2,93 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-    <title>TudoFilmes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Cine Box </title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- my CSS -->
+
+
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <!-- fav Icon -->
+
 </head>
 
+
 <body>
-    <footer>
-        <div class="menuFooter">
-            <ul>
-                <li>Termos de Uso</li>
-                <li>Privacidade</li>
-                <li>Cookies</li>
-            </ul>
 
-            <ul>
-                <li>Informações</li>
-                <li>Entre em contato</li>
-                <li>Central de Ajuda</li>
-            </ul>
 
-            <ul>
-                <li>Sobre</li>
-                <li>Parceiros</li>
-                <li>Contrato de Assinatura</li>
-            </ul>
+  <div class="teste">
+    <nav class="menu">
+      <img src="./img/logo.png" alt="logoPrincipal" class="logo">
+
+      <ul>
+        <li><a href="#"> Ínicio </a></li>
+        <li><a href="#"> Filmes </a></li>
+        <li><a href="#"> Series </a></li>
+        <li><a href="#"> Mais Assistidos </a></li>
+        <li><a href="#"> Minha Lista </a></li>
+      </ul>
+
+      <img src="./img/lupa.png" alt="pesquisar" class="icons">
+      <img src="./img/sino.png" alt="notificações" class="icons">
+
+      <div class="dropdown">
+        <img src="./img/perfil.png" alt="perfil" class=" icons"> <!-- dropbtn -->
+
+        <div>
+          <div class="dropdown-content">
+            <a href="#">Yonne</a>
+            <a href="#">Hyuta</a>
+            <a href="#">Coraline</a>
+            <a href="#">Neeko</a>
+          </div>
         </div>
+      </div>
 
-        <div class="imgFooter">
-            <img src="./img/logoytb.png" alt="">
-            <img src="./img/logoinsta.png" alt="">
-            <img src="./img/logox.png" alt="">
-            <img src="./img/logoface.png" alt="">
+    </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="project-img">
+          <!-- <img src="./img/bgCoraline.png" alt="Foto 01"> -->
         </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="project-img">
+          <img src="./img/filmeDois.jpg" alt="Foto 02">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="project-img">
+          <img src="./img/filmeTrês.jpg" alt="Foto 03">
+        </div>
+      </div>
+    </div>
 
-    </footer>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+
+
 </body>
+
+<script src="./script.js"></script>
 
 </html>
