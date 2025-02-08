@@ -36,6 +36,9 @@
     background-size: cover;
     background-image: url('./img/bg.png');
     background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem */
+
+
     height: 100vh;
     padding: 20px;
     text-align: center;
@@ -106,179 +109,222 @@
     transform: scale(1.05);
     opacity: 0.8;
 }
+/*#endregion*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.divider{
-    background-color: var(--clr-black);
-    color: var(--clr-white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & .h1{
-        text-align: center;
-    }
-}
-
-.sectionPlans{
+/*#region sectionPlans*/
+.sectionPlans {
     padding-top: 50px;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url('img/bgPlans.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.tituloPlans {
     background-color: var(--clr-black);
     color: var(--clr-white);
     display: flex;
     justify-content: center;
-    height: 100vh;
-}
-
-.um{
-    width: 600px;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-}
-
-.dois{
-    width: 600px;
-    height: 500px;
     align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-.btnUm{
-    background-color: var(--clr-lightbrown);
-    border-radius: 80px;
-    margin-bottom: 50px;
+.tituloPlans h1 {
     text-align: center;
-    width: 400px;
+    font-size: clamp(25px, 5vw, 40px);
 }
 
-
-.sectionCar{
-    background-color: var(--clr-wine);
-    color: white;
-    text-align: center;
-    height: 100vh;
+.plansContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 30px;
+    height: 100%; /* Garantindo que a altura seja 100% */
 }
 
-
-.btnDois {
-    background-color: var(--clr-lightbrown); /* Cor de fundo personalizada */
-    height: 300px; /* Altura do botão */
-    width: 400px; /* Largura do botão */
-    border-radius: 80px; /* Bordas arredondadas */
-    margin-bottom: 50px; /* Espaço abaixo do botão */
-    display: flex; /* Usando flexbox para centralizar o conteúdo */
-    align-items: center; /* Alinha o conteúdo verticalmente no centro */
-    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
-    text-align: center; /* Garante que o texto dentro do botão esteja centralizado */
-    font-weight: bold; /* Deixa o texto em negrito, se necessário */
+.planLeft, .planRight {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Garante que o espaço entre os planos seja distribuído */
+    height: 100%; /* Altura total */
 }
 
-
-.opcoes{
+.planLeft {
+    width: 45%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espaça verticalmente */
+    gap: 20px; /* Espaçamento entre os planos */
+}
+
+.planRight {
+    width: 45%;
+}
+
+.um ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btnUm {
     background-color: var(--clr-lightbrown);
-    border-radius: 30px;
-    width: 300px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.opcoesUm{
-    display: inline;
-    background-color: var(--clr-white);
-    color: var(--clr-wine);
-    font-weight: 900;
-    border-radius: 30px;
-    font-size: 20px;
-    height: 40px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
+    flex-grow: 1; /* Faz com que o botão ocupe todo o espaço disponível na altura */
 }
 
-.opcoesDois{
-    background-color: var(--clr-wine);
-    font-weight: 900;
-    border-radius: 30px;
-    font-size: 20px;
-    height: 40px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
+.btnUm h2 {
+    font-size: clamp(20px, 5vw, 30px);
 }
 
-.catalogo {
-	width: 215px;
-    height: 200px;
-	display: inline-block;
-    & img{
-        width: 200px;
-        height: 270px;
-        border-radius: 10px;
-    }
-    &:hover{
-        transform: scale(1.2); 
-        transition: .5s;
-        opacity: .5;
-    }
-
+.btnUm .descricao {
+    font-size: clamp(12px, 4vw, 18px);
+    margin: 10px 0;
 }
 
-.sectionDuvidas{
-    height: 100vh;
+.btnUm h3 {
+    font-size: clamp(18px, 5vw, 24px);
     font-weight: bold;
 }
 
-.duvidasContainer {
-    margin: 10px 10; 
-    padding: 50px;
-    background-color: #49111C;
-
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    background-color: var(--clr-lightbrown);
+    border-radius: 15px;
+    padding: 10px;
 }
 
-.titulo {
-    text-align: left;
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: white;
-    margin-top: 100px;
-}
-
-.duvidasInfos {
-    background-color: rgb(242,244,243, 0.5);
-    border-radius: 8px;
-    margin-bottom: 15px;
-    padding: 20px;
+.opcoesDois {
+    background-color: var(--clr-wine);
+    font-weight: 900;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 48%;
+    text-align: center;
+    padding: 10px;
     cursor: pointer;
-    &:hover{
-        transition: .3s;
-        opacity: .5;
-    }
 }
 
+.opcoesUm {
+    background-color: var(--clr-white);
+    font-weight: 900;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 48%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--clr-wine);
+}
+
+.btnDois {
+    background-color: var(--clr-wine);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.btnDois h2 {
+    font-size: 30px;
+}
+
+.btnDois h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.btnDois .descricao {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+/*#endregion*/
+
+
+/*#region sectionCar*/
+
+.sectionCar {
+    background-image: url('img/bgCar.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Organiza as divs verticalmente */
+    justify-content: flex-start; /* Alinha os itens no topo */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center;
+    height: 100vh; /* Garantir que ocupe 100% da altura da tela */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tituloTopo {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; /* Coloca o título topo mais perto do topo */
+}
+
+.tituloBot {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px; /* Distância do título bot do meio */
+    margin-bottom: 0; /* Garante que o título não fique muito afastado do final */
+}
+
+.catalogos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem conforme o espaço */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro da div */
+    margin-top: 150px; /* Ajusta a distância entre os cards e o título bot */
+}
+
+.catalogo {
+    width: 200px;
+    height: 270px;
+    margin: 10px; /* Espaçamento entre os itens */
+    text-align: center;
+}
+
+.catalogo img {
+    width: 200px;
+    height: 270px;
+    border-radius: 10px;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.catalogo:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+    z-index: 10;
+}
+
+
+
+
+/*#endregion*/
+
+
+
+
+/*#region perguntas*/
 .pergunta {
     display: flex;
     justify-content: space-between;
@@ -288,17 +334,80 @@
     color: var(--clr-white);
 }
 
+.sectionDuvidas {
+    height: 100vh;
+    font-weight: bold;
+    background-image: url('img/bgDuvidas.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.duvidasContainer {
+    margin: 10px 10; 
+    padding: 50px;
+}
+
+.duvidasInfos,
+.duvidasInfosdois,
+.duvidasInfostreis,
+.duvidasInfosquatro,
+.duvidasInfoscinco,
+.duvidasInfosseis {
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.duvidasInfos:hover,
+.duvidasInfosdois:hover,
+.duvidasInfostreis:hover,
+.duvidasInfosquatro:hover,
+.duvidasInfoscinco:hover,
+.duvidasInfosseis:hover {
+    opacity: .5;
+}
+
+.duvidasInfos {
+    background-image: url('img/retangulo.png');
+}
+
+.duvidasInfosdois {
+    background-image: url('img/retanguloDois.png');
+}
+
+.duvidasInfostreis {
+    background-image: url('img/retanguloTreis.png');
+}
+
+.duvidasInfosquatro {
+    background-image: url('img/retanguloQuatro.png');
+}
+
+.duvidasInfoscinco {
+    background-image: url('img/retanguloCinco.png');
+}
+
+.duvidasInfosseis {
+    background-image: url('img/retanguloSeis.png');
+}
+
 .seta {
-    font-size: 18px;
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
 }
 
 /*#endregion*/
 
 
-
-/*#region topo*/
-
-/*#endregion*/
 
 
 
