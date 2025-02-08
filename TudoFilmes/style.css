@@ -27,31 +27,54 @@
 
 /*#region login*/
 
-
-.login{
-    text-align: center;
-    font-size: 40px;
-    color: var(--clr-white);
-}
-
-.tituloTop{
-    padding-top: 100px;
-}
-
 .sectiontopo {
-    position: relative; /* Define o contexto para a posição absoluta dentro dela */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     background-image: url('./img/bg.png');
     background-repeat: no-repeat;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+
+    p{
+        font-size: 15px;
+    }
 }
 
-.esquerda {
-    position: absolute;
-    top: 10px; /* Alinha ao topo com uma margem de 10px */
-    right: 10px; /* Alinha à direita com uma margem de 10px */
-    display: flex;
-    justify-content: center;
+.titulosTopo {
+    text-align: center;
+    font-size: clamp(30px, 5vw, 40px); /* Se adapta ao tamanho da tela */
+    color: var(--clr-white);
 }
+
+.tituloPrimario {
+    padding-top: 20px;
+    font-size: clamp(35px, 6vw, 40px);
+    font-weight: 900;
+    margin-bottom: 30px; /* Aumenta o espaço abaixo do título */
+}
+
+.tituloPrimario h1 span {
+    display: block; /* Faz com que o texto de cada span fique em uma linha separada */
+}
+
+
+.tituloSegundario {
+    font-weight: bold;
+    display: inline;
+    font-size: 15px;
+}
+
+.containerBtnLogin {
+    position: absolute;
+    top: 30px;  /* Move para baixo */
+    right: 80px; /* Move para a esquerda */
+}
+
 
 .btnLogin {
     color: var(--clr-white);
@@ -59,21 +82,48 @@
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 10px;
-    display: block;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.btnAssinar{
+.btnLogin:hover {
+    transform: scale(1.05);
+}
+
+.btnAssinar {
     color: var(--clr-white);
     background-color: var(--clr-wine);
-    font-weight:bold;
-    margin-bottom: 300px;
-    padding: 12px 20px 12px 20px;
+    font-weight: bold;
+    padding: 12px 20px;
     border-radius: 10px;
-    &:hover{
-        transition: .3s;
-        opacity: .5;
-    }
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.btnAssinar:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .divider{
     background-color: var(--clr-black);
@@ -92,7 +142,7 @@
     color: var(--clr-white);
     display: flex;
     justify-content: center;
-    height: 600px;
+    height: 100vh;
 }
 
 .um{
@@ -119,11 +169,11 @@
 }
 
 
-.segundaria{
-    height: 550px;
+.sectionCar{
     background-color: var(--clr-wine);
     color: white;
     text-align: center;
+    height: 100vh;
 }
 
 
@@ -197,12 +247,16 @@
 
 }
 
+.sectionDuvidas{
+    height: 100vh;
+    font-weight: bold;
+}
 
 .duvidasContainer {
-    width: 100%; 
     margin: 10px 10; 
     padding: 50px;
     background-color: #49111C;
+
 }
 
 .titulo {
@@ -237,11 +291,6 @@
 .seta {
     font-size: 18px;
 }
-
-
-
-
-
 
 /*#endregion*/
 
