@@ -2,138 +2,246 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cine Box</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Cine Box</title>
 </head>
 
 <body>
 
-  <header class="menuContainer">
-    <nav class="menu">
-      <img src="./img/logo.png" alt="Logo principal do Cine Box" class="logo">
+    <section class="sectiontopo">
+        <div class="containerBtnLogin">
+            <a href="home.html">
+                <button type="submit" class="btnLogin">Entrar</button>
+            </a>
 
-      <ul>
-        <li><a href="#">Ínicio</a></li>
-        <li><a href="#">Filmes</a></li>
-        <li><a href="#">Séries</a></li>
-        <li><a href="#">Mais Assistidos</a></li>
-        <li><a href="#">Minha Lista</a></li>
-      </ul>
-
-      <div class="icons">
-        <img src="./img/lupa.png" alt="Ícone de pesquisa" class="icons">
-        <img src="./img/sino.png" alt="Ícone de notificações" class="icons">
-      </div>
-
-      <div class="dropdown">
-        <img src="./img/perfil.png" alt="Ícone de perfil" class="icons">
-        <div class="dropdown-content">
-          <a href="#">Yonne</a>
-          <a href="#">Hyuta</a>
-          <a href="#">Coraline</a>
-          <a href="#">Neeko</a>
         </div>
-      </div>
 
-    </nav>
+        <div class="titulosTopo">
+            <div class="tituloPrimario">
+                <h1>
+                    <span>Sua imaginação</span>
+                    <span>ganhando vida</span>
+                </h1>
+            </div>
 
-    <div class="carousel-container">
-      <div class="carousel">
-        <img src="./img/bgCoraline.png" alt="Imagem do filme Coraline 1">
-        <img src="./img/bgUp.png" alt="Imagem do filme Coraline 2">
-        <img src="./img/bgInter.png" alt="Imagem do filme Coraline 3">
-      </div>
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
-    </div>
+            <p>Por apenas <span class="tituloSegundario">17,90 / mês</span></p>
+            <a href="#plansSection">
+                <button class="btnAssinar">ASSINE AGORA</button>
+            </a>
+        </div>
+    </section>
 
-  </header>
+    <section id="sectionPlans" class="sectionPlans">
 
-  <div id="carrosselNetflix" class="carrossel-filmes ">
-    <div class="carrossel-imagens">
-      <img src="./img/filmeUm.png" alt="Imagem 1">
-      <img src="./img/filme2.png" alt="Imagem 2">
-      <img src="./img/filme3.png" alt="Imagem 3">
-      <img src="img/filme4.png" alt="Imagem 4">
-      <img src="img/filme5.png" alt="Imagem 5">
-      <img src="img/filmeSeis.png" alt="Imagem 6">
-    </div>
-    <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
-  </div>
+        <span class="tituloPlano">Os melhores planos para você</span>
 
-  <div id="carrosselNetflix" class="carrossel-filmes ">
-    <h2>Dramas</h2>
-    <div class="carrossel-imagens">
-      <img src="./img/carDrama1.png" alt="Imagem 1">
-      <img src="./img/carDrama2.png" alt="Imagem 2">
-      <img src="./img/carDrama3.png" alt="Imagem 3">
-      <img src="./img/carDrama4.png" alt="Imagem 4">
-      <img src="./img/carDrama5.png" alt="Imagem 5">
-      <img src="./img/carDrama6.png" alt="Imagem 6">
-    </div>
-    <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
-  </div>
+        <div class="plansContainer">
 
-  <div id="carrosselNetflix" class="carrossel-filmes ">
-    <h2>Anime</h2>
-    <div class="carrossel-imagens">
-      <img src="./img/carAnimeimg1.png" alt="Imagem 1">
-      <img src="./img/carAnimeimg2.png" alt="Imagem 2">
-      <img src="./img/carAnimeimg3.png" alt="Imagem 3">
-      <img src="./img/carAnimeimg4.png" alt="Imagem 4">
-      <img src="./img/carAnimeimg5.png" alt="Imagem 5">
-      <img src="img/carAnimeimg6.png" alt="Imagem 6">
-    </div>
-    <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
-  </div>
+            <div class="planLeft">
+                <div class="btnUm">
+                    <h1 class="tituloBtn">Padrão</h1>
+                    <div class="subtTituloBtn">
+                        <h6>Acesso básico aos recursos essenciais. Ideal para quem</h6>
+                        <h6>precisa do básico.</h6>
+                    </div>
+                    <div class="tituloValor">
+                        <h6>R$17,90</h6>
+                    </div>
+                </div>
+                <span class="saibaMais">Saiba mais</span>
 
-  <div id="carrosselNetflix" class="carrossel-filmes ">
-    <h2>Maratonado</h2>
-    <div class="carrossel-imagens">
-      <img src="./img/carMaratonandoimg1.png" alt="Imagem 1">
-      <img src="./img/carMaratonando2.png" alt="Imagem 2">
-      <img src="./img/carMaratonandoimg3.png" alt="Imagem 3">
-      <img src="img/carMaratonandoimg4.png" alt="Imagem 4">
-      <img src="img/carMaratonandoimg5.png" alt="Imagem 5">
-      <img src="img/carMaratonandoimg6.png" alt="Imagem 6">
-    </div>
-    <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
-  </div>
+                <div class="btnUm">
+                    <h1 class="tituloBtn">Premium</h1>
+                    <div class="subtTituloBtn">
+                        <h6>Mais recursos e suporte adicional. Ideal para quem </h6>
+                        <h6>busca um desempenho melhor.</h6>
+                    </div>
+                    <div class="tituloValor">
+                        <h6>R$29,90</h6>
+                    </div>
+                </div>
+                <span class="saibaMais">Saiba mais</span>
 
-  <footer>
-    <div class="menuFooter">
-      <ul>
-        <li>Termos de Uso</li>
-        <li>Privacidade</li>
-        <li>Cookies</li>
-      </ul>
+                <div class="btnUm">
+                    <h1 class="tituloBtn">Diamond</h1>
+                    <div class="subtTituloBtn">
+                        <h6>Funcionalidades avançadas, prioridade no suporte e vantagens</h6>
+                        <h6> exclusivas.</h6>
+                    </div>
+                    <div class="tituloValor">
+                        <h6>R$49,90</h6>
+                    </div>
+                </div>
+                <span class="saibaMais">Saiba mais</span>
+            </div>
 
-      <ul>
-        <li>Informações</li>
-        <li>Entre em contato</li>
-        <li>Central de Ajuda</li>
-      </ul>
+            <div class="planRight">
 
-      <ul>
-        <li>Sobre</li>
-        <li>Parceiros</li>
-        <li>Contrato de Assinatura</li>
-      </ul>
-    </div>
+                <div class="opcoes">
+                    <div class="tabs">
+                        <input type="radio" id="tab-monthly" name="tabs-category" checked>
+                        <label class="tab" for="tab-monthly">Plano Mensal</label>
 
-    <div class="imgFooter">
-      <img src="./img/logoytb.png" alt="">
-      <img src="./img/logoinsta.png" alt="">
-      <img src="./img/logox.png" alt="">
-      <img src="./img/logoface.png" alt="">
-    </div>
+                        <input type="radio" id="tab-yearly" name="tabs-category">
+                        <label class="tab" for="tab-yearly">Plano Anual</label>
 
-  </footer>
+                        <span class="tab-active-bg"></span>
+                    </div>
+                </div>
 
-  <script src="./js/script.js"></script>
+
+                <div class="btnDois">
+                    <h1 class="tituloBtn">Legendary</h1>
+                    <h1 class="tituloBtn">Plano Família</h1>
+                    <div class="subtTituloBtn">
+                        <h6>Acesso completo ao plano Legendary, permitindo a </h6>
+                        <h6>inclusão de até 8 pessoas, com todos os recursos</h6>
+                        <h6>premium e benefícios exclusivos </h6>
+                    </div>
+                    <div class="tituloValorDois">
+                        <h6>R$79,90</h6>
+                    </div>
+                </div>
+                <span class="saibaMais">Saiba mais</span>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="sectionCar" class="sectionCar">
+        <div class="tituloTopo">
+            <h1>Descubra um universo de entretenimento para toda a família!<br>
+                Junte-se a nós e explore um mundo de opções para todas as idades e gostos.</h1>
+        </div>
+
+        <div class="catalogos">
+            <div class="catalogo">
+                <span>Animação</span>
+                <img src="./img/animacao.png" />
+            </div>
+            <div class="catalogo">
+                <span>Ação</span>
+                <img src="./img/acao.png" />
+            </div>
+            <div class="catalogo">
+                <span>Comédia</span>
+                <img src="./img/comedia.png" />
+            </div>
+            <div class="catalogo">
+                <span>Romance</span>
+                <img src="./img/romance.png" />
+            </div>
+            <div class="catalogo">
+                <span>Terror</span>
+                <img src="./img/terror.png" />
+            </div>
+            <div class="catalogo">
+                <span>Ficção Científica</span>
+                <img src="./img/ficcao.png" />
+            </div>
+        </div>
+
+        <div class="tituloBot">
+            <h1>Temos tudo o que você precisa para momentos de diversão inesquecíveis</h1>
+        </div>
+
+    </section>
+
+    <section id="sectionDuvidas" class="sectionDuvidas">
+        <div class="duvidasContainer">
+            <h1 class="tituloDuvidas">Dúvidas Frequentes</h1>
+            <div class="duvidasInfos">
+                <div class="pergunta">
+                    <span> Quais são os planos disponíveis? </span>
+                    <div class="seta">
+                        <img src="./img/mais.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="duvidasInfosdois">
+                <div class="pergunta">
+                    <span> Como faço para assinar? </span>
+                    <div class="seta">
+                        <img src="./img/mais.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="duvidasInfostreis">
+                <div class="pergunta">
+                    <span> Posso cancelar a assinatura a qualquer momento? </span>
+                    <div class="seta">
+                        <img src="./img/mais.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="duvidasInfosquatro">
+                <div class="pergunta">
+                    <span> Há um período de teste gratuito? </span>
+                    <div class="seta">
+                        <img src="./img/mais.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="duvidasInfoscinco">
+                <div class="pergunta">
+                    <span> Quais são os planos disponíveis? </span>
+                    <div class="seta">
+                        <img src="./img/mais.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="duvidasInfosseis">
+                <div class="pergunta">
+                    <span>Como funciona a cobrança?</span>
+                    <div class="seta">
+                        <img src="./img/mais.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="menuFooter">
+            <ul>
+                <li>Termos de Uso</li>
+                <li>Privacidade</li>
+                <li>Cookies</li>
+            </ul>
+
+            <ul>
+                <li>Informações</li>
+                <li>Entre em contato</li>
+                <li>Central de Ajuda</li>
+            </ul>
+
+            <ul>
+                <li>Sobre</li>
+                <li>Parceiros</li>
+                <li>Contrato de Assinatura</li>
+            </ul>
+        </div>
+
+        <div class="imgFooter">
+            <img src="./img/logoytb.png" alt="">
+            <img src="./img/logoinsta.png" alt="">
+            <img src="./img/logox.png" alt="">
+            <img src="./img/logoface.png" alt="">
+        </div>
+
+    </footer>
 
 </body>
 

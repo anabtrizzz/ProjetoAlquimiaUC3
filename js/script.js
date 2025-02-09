@@ -51,4 +51,3 @@ function scrollCarrossel(botao, direcao) {
   carrossel.setAttribute('data-scroll', scrollIndex); // Atualiza o índice no atributo
   carrossel.style.transform = `translateX(-${larguraImagem * scrollIndex}px)`;
 }
-
