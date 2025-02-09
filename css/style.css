@@ -128,9 +128,8 @@
     left: 0;
     width: 100%;
     z-index: 3;
-    /* Ajuste o z-index */
     background: rgba(0, 0, 0, 0.7);
-    padding: 15px 30px;
+    padding: 5px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -645,6 +644,7 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        cursor: pointer;
     }
 
     img {
@@ -657,6 +657,7 @@ footer {
         display: flex;
         justify-content: center;
         gap: 30px;
+        cursor: pointer;
     }
 }
 
