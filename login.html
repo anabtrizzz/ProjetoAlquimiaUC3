@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-    <title>TudoFilmes</title>
+    <title>Cine Box</title>
 </head>
 
 <body>
@@ -28,73 +28,92 @@
             </div>
 
             <p>Por apenas <span class="tituloSegundario">17,90 / mês</span></p>
-            <a href="#sectionplans">
+            <a href="#sectionPlans">
                 <button class="btnAssinar">ASSINE AGORA</button>
             </a>
         </div>
     </section>
 
+    <section id="sectionPlans" class="sectionPlans">
 
-    <section id="sectionplans" class="sectionPlans">
-        <div class="tituloPlans">
-            <h1>Os melhores planos para você</h1>
-        </div>
+        <span class="tituloPlano">Os melhores planos para você</span>
 
         <div class="plansContainer">
-            <!-- Planos à esquerda -->
+
             <div class="planLeft">
-                <ul>
-                    <li class="btnUm">
-                        <h1>Padrão</h1>
-                        <h6>Acesso básico aos recursos essenciais. Ideal para quem precisa do básico.</h6>
+                <div class="btnUm">
+                    <h1 class="tituloBtn">Padrão</h1>
+                    <div class="subtTituloBtn">
+                        <h6>Acesso básico aos recursos essenciais. Ideal para quem</h6>
+                        <h6>precisa do básico.</h6>
+                    </div>
+                    <div class="tituloValor">
                         <h6>R$17,90</h6>
-                    </li>
+                    </div>
+                </div>
+                <span class="saibaMais">Saiba mais</span>
 
-                    <li class="btnUm">
-                        <h1>Premium</h1>
-                        <h6>Mais recursos e suporte adicional. Ideal para quem busca um desempenho melhor.</h6>
+                <div class="btnUm">
+                    <h1 class="tituloBtn">Premium</h1>
+                    <div class="subtTituloBtn">
+                        <h6>Mais recursos e suporte adicional. Ideal para quem </h6>
+                        <h6>busca um desempenho melhor.</h6>
+                    </div>
+                    <div class="tituloValor">
                         <h6>R$29,90</h6>
-                    </li>
+                    </div>
+                </div>
+                <span class="saibaMais">Saiba mais</span>
 
-                    <li class="btnUm">
-                        <h1>Diamond</h1>
-                        <h6>Funcionalidades avançadas, prioridade no suporte e vantagens exclusivas.</h6>
+                <div class="btnUm">
+                    <h1 class="tituloBtn">Diamond</h1>
+                    <div class="subtTituloBtn">
+                        <h6>Funcionalidades avançadas, prioridade no suporte e vantagens</h6>
+                        <h6> exclusivas.</h6>
+                    </div>
+                    <div class="tituloValor">
                         <h6>R$49,90</h6>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <span class="saibaMais">Saiba mais</span>
             </div>
 
-            <!-- Planos à direita -->
             <div class="planRight">
-                <div class="opcoes">
-                    <div class="opcoesUm">
-                        Plano Mensal
-                    </div>
-                    <div class="opcoesDois">
-                        Plano Anual
+                <div class="opcoesteste">
+                    <div class="opcoes">
+                        <div class="opcoesUm">
+                            Plano Mensal
+                        </div>
+                        <div class="opcoesDois">
+                            Plano Anual
+                        </div>
                     </div>
                 </div>
 
                 <div class="btnDois">
-                    <h1>Legendary</h1>
-                    <h2>Plano Família</h2>
-                    <h6>Acesso completo ao plano Legendary, permitindo a inclusão de até 8 pessoas, com todos os
-                        recursos premium e benefícios exclusivos.</h6>
-                    <h6>R$79,90</h6>
+                    <h1 class="tituloBtn">Legendary</h1>
+                    <h1 class="tituloBtn">Plano Família</h1>
+                    <div class="subtTituloBtn">
+                        <h6>Acesso completo ao plano Legendary, permitindo a </h6>
+                        <h6>inclusão de até 8 pessoas, com todos os recursos</h6>
+                        <h6>premium e benefícios exclusivos </h6>
+                    </div>
+                    <div class="tituloValorDois">
+                        <h6>R$79,90</h6>
+                    </div>
                 </div>
+                <span class="saibaMais">Saiba mais</span>
+
             </div>
         </div>
     </section>
 
-
-
-    <section class="sectionCar">
-
+    <section id="sectionCar" class="sectionCar">
         <div class="tituloTopo">
             <h1>Descubra um universo de entretenimento para toda a família!<br>
                 Junte-se a nós e explore um mundo de opções para todas as idades e gostos.</h1>
         </div>
-    
+
         <div class="catalogos">
             <div class="catalogo">
                 <span>Animação</span>
@@ -121,19 +140,16 @@
                 <img src="./img/ficcao.png" />
             </div>
         </div>
-    
+
         <div class="tituloBot">
             <h1>Temos tudo o que você precisa para momentos de diversão inesquecíveis</h1>
         </div>
-    
+
     </section>
-    
 
-    
-
-    <div class="sectionDuvidas">
+    <section id="sectionDuvidas" class="sectionDuvidas">
         <div class="duvidasContainer">
-            <h1 class="titulo">Dúvidas Frequentes</h1>
+            <h1 class="tituloDuvidas">Dúvidas Frequentes</h1>
             <div class="duvidasInfos">
                 <div class="pergunta">
                     <span> Quais são os planos disponíveis? </span>
@@ -189,7 +205,7 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
     <footer>
         <div class="menuFooter">

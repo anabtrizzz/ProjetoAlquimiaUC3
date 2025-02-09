@@ -1,7 +1,7 @@
 /*#region global*/
 @font-face {
     font-family: 'Poppins';
-    src: url('./font/Poppins-ExtraLight.ttf');
+    src: url('../font/Inter-VariableFont_opsz\,wght.ttf');
 }
 
 /*reset*/
@@ -34,23 +34,25 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-image: url('./img/bg.png');
+    background-image: url('../img/bg.png');
     background-repeat: no-repeat;
-    background-position: center; /* Centraliza a imagem */
+    background-position: center;
+    /* Centraliza a imagem */
 
 
     height: 100vh;
     padding: 20px;
     text-align: center;
 
-    p{
+    p {
         font-size: 15px;
     }
 }
 
 .titulosTopo {
     text-align: center;
-    font-size: clamp(30px, 5vw, 40px); /* Se adapta ao tamanho da tela */
+    font-size: clamp(30px, 5vw, 40px);
+    /* Se adapta ao tamanho da tela */
     color: var(--clr-white);
 }
 
@@ -58,11 +60,11 @@
     padding-top: 20px;
     font-size: clamp(35px, 6vw, 40px);
     font-weight: 900;
-    margin-bottom: 30px; /* Aumenta o espaço abaixo do título */
+    margin-bottom: 30px;
 }
 
 .tituloPrimario h1 span {
-    display: block; /* Faz com que o texto de cada span fique em uma linha separada */
+    display: block;
 }
 
 
@@ -74,8 +76,8 @@
 
 .containerBtnLogin {
     position: absolute;
-    top: 30px;  /* Move para baixo */
-    right: 80px; /* Move para a esquerda */
+    top: 30px;
+    right: 80px;
 }
 
 
@@ -109,125 +111,114 @@
     transform: scale(1.05);
     opacity: 0.8;
 }
+
 /*#endregion*/
 
 /*#region sectionPlans*/
 .sectionPlans {
-    padding-top: 50px;
     color: var(--clr-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-
-    background-image: url('img/bgPlans.png');
+    background-image: url('../img/bgPlans.png');
     background-repeat: no-repeat;
-    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
-    background-position: center; /* Centraliza a imagem */
-}
-
-.tituloPlans {
-    background-color: var(--clr-black);
-    color: var(--clr-white);
-    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     justify-content: center;
-    align-items: center;
+
+    .tituloPlano{
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .plansContainer{
+        display: flex;
+        margin-top: 30px;
+        gap: 100px;
+    }
+
+
 }
 
-.tituloPlans h1 {
-    text-align: center;
-    font-size: clamp(25px, 5vw, 40px);
+.btnUm:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.plansContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin-top: 30px;
-    height: 100%; /* Garantindo que a altura seja 100% */
+.opcoesDois:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-wine);
 }
 
-.planLeft, .planRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Garante que o espaço entre os planos seja distribuído */
-    height: 100%; /* Altura total */
+.opcoesUm:hover {
+    background-color: var(--clr-wine);
+    color: var(--clr-white);
 }
 
 .planLeft {
-    width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Espaça verticalmente */
-    gap: 20px; /* Espaçamento entre os planos */
+    justify-content: space-between;
 }
 
-.planRight {
-    width: 45%;
+.subtTituloBtn {
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 5px;
 }
 
-.um ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.tituloValor {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.tituloValorDois {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 100;
 }
 
 .btnUm {
     background-color: var(--clr-lightbrown);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 70px;
     text-align: center;
-    flex-grow: 1; /* Faz com que o botão ocupe todo o espaço disponível na altura */
+    display: flex;
+    flex-direction: column;
 }
 
-.btnUm h2 {
-    font-size: clamp(20px, 5vw, 30px);
+.saibaMais {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: var(--clr-white);
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
-.btnUm .descricao {
-    font-size: clamp(12px, 4vw, 18px);
-    margin: 10px 0;
+.planRight {
+    display: flex;
+    flex-direction: column;
+
 }
 
-.btnUm h3 {
-    font-size: clamp(18px, 5vw, 24px);
-    font-weight: bold;
+.opcoesteste {
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .opcoes {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 500px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 5px;
     margin-bottom: 20px;
     background-color: var(--clr-lightbrown);
-    border-radius: 15px;
-    padding: 10px;
-}
-
-.opcoesDois {
-    background-color: var(--clr-wine);
-    font-weight: 900;
-    border-radius: 15px;
-    font-size: 20px;
-    width: 48%;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.opcoesUm {
-    background-color: var(--clr-white);
-    font-weight: 900;
-    border-radius: 15px;
-    font-size: 20px;
-    width: 48%;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-    color: var(--clr-wine);
+    border-radius: 10px;
+    padding: 3px;
 }
 
 .btnDois {
@@ -235,18 +226,30 @@
     color: white;
     text-align: center;
     padding: 20px;
-    width: 300px;
-    border-radius: 10px;
-    margin-top: 30px;
+    border-radius: 70px;
+    margin-top: 35%;
 }
 
-.btnDois h2 {
-    font-size: 30px;
-}
 
-.btnDois h3 {
+.opcoesDois {
+    background-color: var(--clr-wine);
+    font-weight: 00;
+    border-radius: 15px;
     font-size: 20px;
-    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.opcoesUm {
+    background-color: var(--clr-white);
+    font-weight: 700;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--clr-wine);
 }
 
 .btnDois .descricao {
@@ -254,24 +257,22 @@
     margin: 10px 0;
 }
 
-
 /*#endregion*/
-
 
 /*#region sectionCar*/
 
 .sectionCar {
-    background-image: url('img/bgCar.png');
+    background-image: url('../img/bgCar.png');
     background-repeat: no-repeat;
-    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+    background-position: center;
     color: white;
     display: flex;
-    flex-direction: column; /* Organiza as divs verticalmente */
-    justify-content: flex-start; /* Alinha os itens no topo */
-    align-items: center; /* Centraliza os itens horizontalmente */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
-    height: 100vh; /* Garantir que ocupe 100% da altura da tela */
+    height: 100vh;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -279,27 +280,28 @@
 .tituloTopo {
     width: 100%;
     text-align: center;
-    margin-top: 30px; /* Coloca o título topo mais perto do topo */
+    margin-top: 30px;
 }
 
 .tituloBot {
     width: 100%;
     text-align: center;
-    margin-top: 50px; /* Distância do título bot do meio */
-    margin-bottom: 0; /* Garante que o título não fique muito afastado do final */
+    margin-top: 70px;
+    margin-bottom: 0;
+    font-size: 20px;
 }
 
 .catalogos {
     display: flex;
-    flex-wrap: wrap; /* Permite que as imagens se ajustem conforme o espaço */
-    justify-content: center; /* Centraliza os itens horizontalmente dentro da div */
-    margin-top: 150px; /* Ajusta a distância entre os cards e o título bot */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
 }
 
 .catalogo {
     width: 200px;
     height: 270px;
-    margin: 10px; /* Espaçamento entre os itens */
+    margin: 10px;
     text-align: center;
 }
 
@@ -308,7 +310,12 @@
     height: 270px;
     border-radius: 10px;
     transition: transform 0.5s, opacity 0.5s;
+
+    /* Reduzindo o efeito de opacidade no final */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 77%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 77%, rgba(0, 0, 0, 0) 100%);
 }
+
 
 .catalogo:hover img {
     transform: scale(1.2);
@@ -316,35 +323,44 @@
     z-index: 10;
 }
 
-
-
+.catalogo span {
+    display: block;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
 
 /*#endregion*/
-
-
-
 
 /*#region perguntas*/
 .pergunta {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     color: var(--clr-white);
+}
+
+.tituloDuvidas {
+    margin-left: 160px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 50px;
+    font-size: 30px;
+
 }
 
 .sectionDuvidas {
     height: 100vh;
     font-weight: bold;
-    background-image: url('img/bgDuvidas.png');
+    background-image: url('../img/bgDuvidas.png');
     background-repeat: no-repeat;
-    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+    background-position: center;
 }
 
 .duvidasContainer {
-    margin: 10px 10; 
+    margin: 10px 10;
     padding: 50px;
 }
 
@@ -355,8 +371,8 @@
 .duvidasInfoscinco,
 .duvidasInfosseis {
     background-repeat: no-repeat;
-    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+    background-position: center;
     border-radius: 8px;
     margin-bottom: 15px;
     margin-left: 150px;
@@ -376,40 +392,41 @@
 }
 
 .duvidasInfos {
-    background-image: url('img/retangulo.png');
+    background-image: url('../img/retangulo.png');
 }
 
 .duvidasInfosdois {
-    background-image: url('img/retanguloDois.png');
+    background-image: url('../img/retanguloDois.png');
 }
 
 .duvidasInfostreis {
-    background-image: url('img/retanguloTreis.png');
+    background-image: url('../img/retanguloTreis.png');
 }
 
 .duvidasInfosquatro {
-    background-image: url('img/retanguloQuatro.png');
+    background-image: url('../img/retanguloQuatro.png');
 }
 
 .duvidasInfoscinco {
-    background-image: url('img/retanguloCinco.png');
+    background-image: url('../img/retanguloCinco.png');
 }
 
 .duvidasInfosseis {
-    background-image: url('img/retanguloSeis.png');
+    background-image: url('../img/retanguloSeis.png');
 }
 
 .seta {
     background-repeat: no-repeat;
-    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+    background-position: center;
 }
 
+.pergunta span {
+    font-weight: 900;
+}
+
+
 /*#endregion*/
-
-
-
-
 
 /*#region footer*/
 footer {
@@ -439,4 +456,4 @@ footer {
     }
 }
 
-/*#endregion*/ 
+/*#endregion*/
