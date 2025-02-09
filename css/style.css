@@ -1,7 +1,7 @@
 /*#region global*/
 @font-face {
     font-family: 'Poppins';
-    src: url('../font/Inter-VariableFont_opsz\,wght.ttf');
+    src: url('../font/InterVariableFont.ttf');
 }
 
 /*reset*/
@@ -52,7 +52,6 @@
 .titulosTopo {
     text-align: center;
     font-size: clamp(30px, 5vw, 40px);
-    /* Se adapta ao tamanho da tela */
     color: var(--clr-white);
 }
 
@@ -79,7 +78,6 @@
     top: 30px;
     right: 80px;
 }
-
 
 .btnLogin {
     color: var(--clr-white);
@@ -115,7 +113,7 @@
 /*#endregion*/
 
 /*#region sectionPlans*/
-.sectionPlans {
+.plans-section {
     color: var(--clr-white);
     display: flex;
     flex-direction: column;
@@ -128,60 +126,58 @@
     background-attachment: fixed;
     justify-content: center;
 
-    .tituloPlano{
+    .section-title {
         font-weight: 600;
         font-size: 40px;
     }
 
-    .plansContainer{
+    .plans-container {
         display: flex;
         margin-top: 30px;
         gap: 100px;
     }
-
-
 }
 
-.btnUm:hover {
+.plan-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.opcoesDois:hover {
+.plan-option-special:hover {
     background-color: var(--clr-white);
     color: var(--clr-wine);
 }
 
-.opcoesUm:hover {
+.plan-option-default:hover {
     background-color: var(--clr-wine);
     color: var(--clr-white);
 }
 
-.planLeft {
+.plan-column-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.subtTituloBtn {
+.plan-subtitle {
     margin-top: 10px;
     font-size: 20px;
     padding: 5px;
 }
 
-.tituloValor {
+.plan-price {
     margin-top: 10px;
     font-size: 25px;
     font-weight: 100;
 }
 
-.tituloValorDois {
+.plan-price-special {
     margin-top: 50px;
     font-size: 25px;
     font-weight: 100;
 }
 
-.btnUm {
+.plan-card {
     background-color: var(--clr-lightbrown);
     padding: 10px;
     border-radius: 70px;
@@ -190,7 +186,7 @@
     flex-direction: column;
 }
 
-.saibaMais {
+.more-info {
     display: block;
     text-align: center;
     font-size: 12px;
@@ -199,19 +195,18 @@
     margin-top: 5px;
 }
 
-.planRight {
+.plan-column-right {
     display: flex;
     flex-direction: column;
-
 }
 
-.opcoesteste {
+.plan-options-container {
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-.opcoes {
+.plan-options {
     display: inline-flex;
     justify-content: center;
     gap: 5px;
@@ -221,7 +216,7 @@
     padding: 3px;
 }
 
-.btnDois {
+.plan-card-special {
     background-color: var(--clr-wine);
     color: white;
     text-align: center;
@@ -230,8 +225,7 @@
     margin-top: 35%;
 }
 
-
-.opcoesDois {
+.plan-option-special {
     background-color: var(--clr-wine);
     font-weight: 00;
     border-radius: 15px;
@@ -241,7 +235,7 @@
     cursor: pointer;
 }
 
-.opcoesUm {
+.plan-option-default {
     background-color: var(--clr-white);
     font-weight: 700;
     border-radius: 15px;
@@ -252,7 +246,7 @@
     color: var(--clr-wine);
 }
 
-.btnDois .descricao {
+.plan-card-special .descricao {
     font-size: 16px;
     margin: 10px 0;
 }
