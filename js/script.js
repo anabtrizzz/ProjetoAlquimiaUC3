@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function scrollCarrossel(botao, direcao) {
-  const carrossel = botao.parentElement.querySelector('.carrossel-imagens'); // Encontra o carrossel dentro do mesmo container
+  const carrossel = botao.closest('.carrossel-filmes').querySelector('.carrossel-imagens'); // Encontra o carrossel dentro do mesmo container
   const imagens = carrossel.querySelectorAll('img');
   const larguraImagem = imagens[0].offsetWidth + 10; // Largura da imagem + espaçamento
   let scrollIndex = parseInt(carrossel.getAttribute('data-scroll') || '0'); // Obtém o índice atual ou inicia em 0
@@ -49,5 +49,7 @@ function scrollCarrossel(botao, direcao) {
   }
 
   carrossel.setAttribute('data-scroll', scrollIndex); // Atualiza o índice no atributo
-  carrossel.style.transform = `translateX(-${larguraImagem * scrollIndex}px)`;
+  carrossel.style.transition = 'transform 0.5s ease'; // Adiciona transição suave
+  carrossel.style.transform = `translateX(-${larguraImagem * scrollIndex}px)`; // Aplica o movimento
 }
+

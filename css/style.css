@@ -257,60 +257,69 @@ nav .icons {
 /*#endregion*/
 
 /*#region carrossel Filmes No Banner*/
-#carrossel-filmes-container {
+.carrossel-filmes-container{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 10px 0;
     z-index: 2;
+    display: flex;
+    justify-content: center; /* Centraliza o carrossel horizontalmente */
 }
 
-.seta-direita-filmes-carrossel {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
 
 /*#endregion*/
 
 /*#region carrossel filmes*/
-.carrossel-imagens img:hover {
-    transform: scale(1.2);
-    /* Aumenta a imagem em 20% */
-}
-
+/* Estilos para o contêiner do carrossel */
 .carrossel-filmes {
     position: relative;
-    width: 100%;
     overflow: hidden;
-    background-color: var(--clr-black);
     color: var(--clr-white);
-}
-
-.carrossel-imagens {
-    justify-content: center;
     display: flex;
-    gap: 10px;
-    transition: transform 0.3s ease;
-
-
+    align-items: flex-start; /* Alinha o título e as imagens no topo */
+    gap: 20px; /* Adiciona espaço entre o título e as imagens */
 }
 
+/* Estilos para o título */
+.carrossel-filmes h2 {
+    color: var(--clr-white); /* Cor do título */
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+    margin: 0; /* Remove a margem padrão */
+    flex-shrink: 0; /* Impede que o título encolha ao ajustar o tamanho */
+    white-space: nowrap; /* Impede que o título quebre para a linha de baixo */
+}
+
+/* Estilos para o carrossel de imagens */
+.carrossel-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: visible; /* Permite que as imagens aumentem sem serem cortadas */
+    transition: transform 0.3s ease;
+    flex-wrap: nowrap;
+    padding: 0 20px; /* Adiciona espaçamento nas laterais para não cortar as imagens */
+}
+
+/* Estilos para as imagens */
 .carrossel-imagens img {
-    height: auto;
+    height: 132px;
+    width: 220px; /* Largura da imagem */
     border-radius: 8px;
     object-fit: cover;
-    transition: transform 0.3s ease;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efeito de hover nas imagens */
+.carrossel-imagens img:hover {
+    transform: scale(1.2); /* Aumenta 20% ao passar o mouse */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Efeito de destaque */
+}
+
+/* Estilos para as setas de navegação */
+/* Estilos para as setas de navegação */
 .seta-direita,
 .seta-esquerda {
     position: absolute;
@@ -319,8 +328,16 @@ nav .icons {
     color: white;
     border: none;
     padding: 10px;
+    border-radius: 50%;
     cursor: pointer;
     transform: translateY(-50%);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.seta-direita:hover,
+.seta-esquerda:hover {
+    opacity: 1;
 }
 
 .seta-direita {
@@ -331,12 +348,18 @@ nav .icons {
     left: 10px;
 }
 
-
+/* Container principal dos carrosséis */
 .sectionFilmesContainerCarroseu {
     padding: 100px;
     background-color: var(--clr-black);
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Aumenta o espaçamento entre os carrosséis */
 }
+
+
+
 
 /*#endregion*/
 
