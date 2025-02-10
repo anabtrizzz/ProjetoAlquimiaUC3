@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let index = 0;
-  const carrossel = document.querySelector('.carousel');
-  const imagens = document.querySelectorAll('.carousel img');
+  const carrossel = document.querySelector('.carrossel');
+  const imagens = document.querySelectorAll('.carrossel img');
   const total = imagens.length;
   const larguraSlide = 100 / total;
   let intervalo;
