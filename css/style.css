@@ -1,6 +1,6 @@
 /*#region global*/
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Inter';
     src: url('../font/InterVariableFont.ttf');
 }
 
@@ -10,7 +10,7 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Poppins';
+    font-family: 'Inter';
 }
 
 /*paleta de cores*/
@@ -42,7 +42,7 @@
 
 .dropdown-content a {
     float: none;
-    color: black;
+    color: var(--clr-black);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -51,7 +51,6 @@
 
 .dropdown-content a:hover {
     background-color: #ddd;
-
 }
 
 .dropdown:hover .dropdown-content,
@@ -165,7 +164,7 @@ nav .icons {
     transform: scale(1.2);
 }
 
-.carousel-container {
+.carrossel-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -175,14 +174,7 @@ nav .icons {
     z-index: 1;
 }
 
-.carousel {
-    display: flex;
-    width: 300%;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
+.carrossel img {
     width: 33.33%;
     height: 100vh;
     object-fit: cover;
@@ -194,7 +186,7 @@ nav .icons {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--clr-white);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -211,27 +203,11 @@ nav .icons {
 /*#endregion*/
 
 /*#region carrossel Banner*/
-.carousel-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.carousel {
+.carrossel {
     display: flex;
     width: 300%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-    width: 33.33%;
-    height: 100vh;
-    object-fit: cover;
 }
 
 .prev,
@@ -246,18 +222,10 @@ nav .icons {
     cursor: pointer;
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
 /*#endregion*/
 
-/*#region carrossel Filmes No Banner*/
-.carrossel-filmes-container{
+/*#region carrossel filmes*/
+.carrossel-filmes-container {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -265,67 +233,57 @@ nav .icons {
     padding: 10px 0;
     z-index: 2;
     display: flex;
-    justify-content: center; /* Centraliza o carrossel horizontalmente */
+    justify-content: center;
+
 }
 
-
-/*#endregion*/
-
-/*#region carrossel filmes*/
-/* Estilos para o contêiner do carrossel */
 .carrossel-filmes {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     color: var(--clr-white);
     display: flex;
-    align-items: flex-start; /* Alinha o título e as imagens no topo */
-    gap: 20px; /* Adiciona espaço entre o título e as imagens */
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
 }
 
-/* Estilos para o título */
 .carrossel-filmes h2 {
-    color: var(--clr-white); /* Cor do título */
-    font-size: 24px; /* Ajuste o tamanho conforme necessário */
-    margin: 0; /* Remove a margem padrão */
-    flex-shrink: 0; /* Impede que o título encolha ao ajustar o tamanho */
-    white-space: nowrap; /* Impede que o título quebre para a linha de baixo */
+    color: var(--clr-white);
+    font-size: 24px;
+    margin: 0;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
-/* Estilos para o carrossel de imagens */
 .carrossel-imagens {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    overflow: visible; /* Permite que as imagens aumentem sem serem cortadas */
+    overflow: visible;
     transition: transform 0.3s ease;
     flex-wrap: nowrap;
-    padding: 0 20px; /* Adiciona espaçamento nas laterais para não cortar as imagens */
 }
 
-/* Estilos para as imagens */
 .carrossel-imagens img {
     height: 132px;
-    width: 220px; /* Largura da imagem */
+    width: 220px;
     border-radius: 8px;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito de hover nas imagens */
 .carrossel-imagens img:hover {
-    transform: scale(1.2); /* Aumenta 20% ao passar o mouse */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Efeito de destaque */
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-/* Estilos para as setas de navegação */
-/* Estilos para as setas de navegação */
 .seta-direita,
 .seta-esquerda {
     position: absolute;
     top: 50%;
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--clr-white);
     border: none;
     padding: 10px;
     border-radius: 50%;
@@ -341,30 +299,26 @@ nav .icons {
 }
 
 .seta-direita {
-    right: 10px;
+    right: -50px
 }
 
 .seta-esquerda {
-    left: 10px;
+    left: -50px;
 }
 
-/* Container principal dos carrosséis */
-.sectionFilmesContainerCarroseu {
+.secao-filmes-carrossel {
     padding: 100px;
     background-color: var(--clr-black);
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Aumenta o espaçamento entre os carrosséis */
+    gap: 30px;
+    align-items: center;
 }
-
-
-
 
 /*#endregion*/
 
 /*#region login*/
-
 .sectiontopo {
     position: relative;
     display: flex;
@@ -372,11 +326,9 @@ nav .icons {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-image: url('../img/bg.png');
+    background-image: url('../img/background/bg.png');
     background-repeat: no-repeat;
     background-position: center;
-    /* Centraliza a imagem */
-
 
     height: 100vh;
     padding: 20px;
@@ -405,7 +357,7 @@ nav .icons {
 }
 
 
-.tituloSegundario {
+.tituloSecundario {
     font-weight: bold;
     display: inline;
     font-size: 15px;
@@ -457,7 +409,7 @@ nav .icons {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-image: url('../img/bgPlans.png');
+    background-image: url('../img/background/bgPlans.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -596,7 +548,7 @@ nav .icons {
 /*#region sectionCard*/
 
 .sectionCar {
-    background-image: url('../img/bgCar.png');
+    background-image: url('../img/background/bgCar.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -645,11 +597,9 @@ nav .icons {
     border-radius: 10px;
     transition: transform 0.5s, opacity 0.5s;
 
-    /* Reduzindo o efeito de opacidade no final */
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 77%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 77%, rgba(0, 0, 0, 0) 100%);
 }
-
 
 .catalogo:hover img {
     transform: scale(1.2);
@@ -687,7 +637,7 @@ nav .icons {
 .sectionDuvidas {
     height: 100vh;
     font-weight: bold;
-    background-image: url('../img/bgDuvidas.png');
+    background-image: url('../img/background/bgDuvidas.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -698,12 +648,7 @@ nav .icons {
     padding: 50px;
 }
 
-.duvidasInfos,
-.duvidasInfosdois,
-.duvidasInfostreis,
-.duvidasInfosquatro,
-.duvidasInfoscinco,
-.duvidasInfosseis {
+.duvidasInfos {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -716,37 +661,12 @@ nav .icons {
     transition: .3s;
 }
 
-.duvidasInfos:hover,
-.duvidasInfosdois:hover,
-.duvidasInfostreis:hover,
-.duvidasInfosquatro:hover,
-.duvidasInfoscinco:hover,
-.duvidasInfosseis:hover {
+.duvidasInfos:hover {
     opacity: .5;
 }
 
 .duvidasInfos {
-    background-image: url('../img/retangulo.png');
-}
-
-.duvidasInfosdois {
-    background-image: url('../img/retanguloDois.png');
-}
-
-.duvidasInfostreis {
-    background-image: url('../img/retanguloTreis.png');
-}
-
-.duvidasInfosquatro {
-    background-image: url('../img/retanguloQuatro.png');
-}
-
-.duvidasInfoscinco {
-    background-image: url('../img/retanguloCinco.png');
-}
-
-.duvidasInfosseis {
-    background-image: url('../img/retanguloSeis.png');
+    background-image: url('../img/background/bgPergunta.png');
 }
 
 .seta {
@@ -759,13 +679,12 @@ nav .icons {
     font-weight: 900;
 }
 
-
 /*#endregion*/
 
 /*#region footer*/
 footer {
-    background-color: #0A0908;
-    color: white;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
     width: 100%;
     height: 230px;
     padding-top: 30px;

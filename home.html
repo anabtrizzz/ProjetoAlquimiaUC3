@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Cine Box: Seu lugar para encontrar filmes e séries. Explore os melhores títulos e opções para maratonar!">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
   <title>Cine Box</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -39,77 +42,85 @@
 
     </nav>
 
-    <div class="carousel-container">
-      <div class="carousel">
-        <img src="./img/bgCoraline.png" alt="Imagem do filme Coraline 1">
-        <img src="./img/bgUp.png" alt="Imagem do filme Coraline 2">
-        <img src="./img/bgInter.png" alt="Imagem do filme Coraline 3">
+    <div class="carrossel-container">
+      <div class="carrossel">
+        <img src="./img/background/bgCoraline.png" alt="Imagem do filme Coraline">
+        <img src="./img/background/bgUp.png" alt="Imagem do filme Up - Altas Aventuras">
+        <img src="./img/background/bgInter.png" alt="Imagem do filme Interestelar">
       </div>
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
+      <button class="prev" aria-label="Navegar para a esquerda">&#10094;</button>
+      <button class="next" aria-label="Navegar para a direita">&#10095;</button>
     </div>
 
   </header>
 
   <div class="carrossel-filmes-container">
     <div class="carrossel-filmes">
-      <button class="seta-esquerda" onclick="scrollCarrossel(this, 'esquerda')">&#10094;</button>
+      <button class="seta-esquerda" onclick="scrollCarrossel(this, 'esquerda')"
+        aria-label="Navegar para a esquerda">&#10094;</button>
       <div class="carrossel-imagens">
-        <img src="./img/filmeUm.png" alt="Imagem 1">
-        <img src="./img/filme2.png" alt="Imagem 2">
-        <img src="./img/filme3.png" alt="Imagem 3">
-        <img src="img/filme4.png" alt="Imagem 4">
-        <img src="img/filme5.png" alt="Imagem 5">
-        <img src="img/filmeSeis.png" alt="Imagem 6">
+        <img src="./img/carrosselPrincipal/coraline.png" alt="Imagem do filme Coraline">
+        <img src="./img/carrosselPrincipal/captainamerica.png" alt="Imagem do filme Capitão América">
+        <img src="./img/carrosselPrincipal/thenum.png" alt="Imagem do filme O Número 23">
+        <img src="img/carrosselPrincipal/horadopesadelo.png" alt="Imagem do filme Hora do Pesadelo">
+        <img src="img/carrosselPrincipal/saw.png" alt="Imagem do filme Jogos Mortais">
+        <img src="img/carrosselPrincipal/captainmarvel.png" alt="Imagem do filme Capitã Marvel">
       </div>
-      <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
+      <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')"
+        aria-label="Navegar para a direita">&#10095;</button>
     </div>
   </div>
 
-  <div class="sectionFilmesContainerCarroseu">
+  <section class="secao-filmes-carrossel">
     <div class="carrossel-filmes">
       <h2>Dramas</h2>
-      <button class="seta-esquerda" onclick="scrollCarrossel(this, 'esquerda')">&#10094;</button>
+      <button class="seta-esquerda" onclick="scrollCarrossel(this, 'esquerda')"
+        aria-label="Navegar para a esquerda">&#10094;</button>
       <div class="carrossel-imagens">
-        <img src="./img/carDrama1.png" alt="Imagem 1">
-        <img src="./img/carDrama2.png" alt="Imagem 2">
-        <img src="./img/carDrama3.png" alt="Imagem 3">
-        <img src="./img/carDrama4.png" alt="Imagem 4">
-        <img src="./img/carDrama5.png" alt="Imagem 5">
-        <img src="./img/carDrama6.png" alt="Imagem 6">
+        <img src="./img/carrosselDrama/sl.png" alt="Imagem do filme 'A Espera de um Milagre'">
+        <img src="./img/carrosselDrama/comoeuera.png" alt="Imagem do filme 'Como Eu Era Antes de Você'">
+        <img src="./img/carrosselDrama/acorpurpura.png.png" alt="Imagem do filme 'A Cor Púrpura'">
+        <img src="./img/carrosselDrama/marteum.png" alt="Imagem do filme 'Marte Um'">
+        <img src="./img/carrosselDrama/euphoria.png" alt="Imagem da série 'Euphoria'">
+        <img src="./img/carrosselDrama/you.png" alt="Imagem da série 'You'">
       </div>
-      <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
+      <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')"
+        aria-label="Navegar para a direita">&#10095;</button>
     </div>
 
     <div class="carrossel-filmes">
       <h2>Anime</h2>
-      <button class="seta-esquerda" onclick="scrollCarrossel(this, 'esquerda')">&#10094;</button>
+      <button class="seta-esquerda" onclick="scrollCarrossel(this, 'esquerda')"
+        aria-label="Navegar para a esquerda">&#10094;</button>
       <div class="carrossel-imagens">
-        <img src="./img/carAnimeimg1.png" alt="Imagem 1">
-        <img src="./img/carAnimeimg2.png" alt="Imagem 2">
-        <img src="./img/carAnimeimg3.png" alt="Imagem 3">
-        <img src="./img/carAnimeimg4.png" alt="Imagem 4">
-        <img src="./img/carAnimeimg5.png" alt="Imagem 5">
-        <img src="./img/carAnimeimg6.png" alt="Imagem 6">
+        <img src="./img/carrosselAnime/hunterxhunter.png" alt="Imagem do anime Hunter x Hunter">
+        <img src="./img/carrosselAnime/berser.png" alt="Imagem do anime Berserk">
+        <img src="./img/carrosselAnime/juju.png" alt="Imagem do anime Jujutsu Kaisen">
+        <img src="./img/carrosselAnime/solo.png" alt="Imagem do anime Solo Leveling">
+        <img src="./img/carrosselAnime/naruto.png" alt="Imagem do anime Naruto">
+        <img src="./img/carrosselAnime/deth.png" alt="Imagem do anime Death Note">
       </div>
-      <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
+      <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')"
+        aria-label="Navegar para a direita">&#10095;</button>
     </div>
 
     <div class="carrossel-filmes">
-      <h2>Maratonado</h2>
-      <button class="seta-esquerda" onclick="scrollCarrossel(this, 'esquerda')">&#10094;</button>
+      <h2>Maratonando</h2>
+      <button class="seta-esquerda" onclick="scrollCarrossel(this, 'esquerda')"
+        aria-label="Navegar para a esquerda">&#10094;</button>
       <div class="carrossel-imagens">
-        <img src="./img/carMaratonandoimg1.png" alt="Imagem 1">
-        <img src="./img/carMaratonandoimg2.png" alt="Imagem 2">
-        <img src="./img/carMaratonandoimg3.png" alt="Imagem 3">
-        <img src="./img/carMaratonandoimg4.png" alt="Imagem 4">
-        <img src="./img/carMaratonandoimg5.png" alt="Imagem 5">
-        <img src="./img/carMaratonandoimg6.png" alt="Imagem 6">
+        <img src="./img/carrosselMaratonando/supernatural.png" alt="Imagem da série Supernatural">
+        <img src="./img/carrosselMaratonando/dexter.png" alt="Imagem da série Dexter">
+        <img src="./img/carrosselMaratonando/bb.png" alt="Imagem da série Breaking Bad">
+        <img src="./img/carrosselMaratonando/doctor.png" alt="Imagem da série Doctor Who">
+        <img src="./img/carrosselMaratonando/pb.png" alt="Imagem da série Peaky Blinders">
+        <img src="./img/carrosselMaratonando/wandinha.png" alt="Imagem da série Wandinha">
       </div>
-      <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')">&#10095;</button>
+      <button class="seta-direita" onclick="scrollCarrossel(this, 'direita')"
+        aria-label="Navegar para a direita">&#10095;</button>
     </div>
-  </div>
 
+  </section>
 
   <footer>
     <div class="menuFooter">
@@ -133,10 +144,18 @@
     </div>
 
     <div class="imgFooter">
-      <img src="./img/logoytb.png" alt="">
-      <img src="./img/logoinsta.png" alt="">
-      <img src="./img/logox.png" alt="">
-      <img src="./img/logoface.png" alt="">
+      <a href="https://www.youtube.com" target="_blank" aria-label="Ir para o YouTube">
+        <img src="./img/logoytb.png" alt="Ícone do YouTube">
+      </a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Ir para o Instagram">
+        <img src="./img/logoinsta.png" alt="Ícone do Instagram">
+      </a>
+      <a href="https://www.x.com" target="_blank" aria-label="Ir para o X (antigo Twitter)">
+        <img src="./img/logox.png" alt="Ícone do X (antigo Twitter)">
+      </a>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Ir para o Facebook">
+        <img src="./img/logoface.png" alt="Ícone do Facebook">
+      </a>
     </div>
 
   </footer>
